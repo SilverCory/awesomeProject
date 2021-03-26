@@ -10,10 +10,10 @@ var (
 )
 
 type HelpCommand struct {
-	cm command.Manager
+	CM command.Manager
 }
 
 func (hc *HelpCommand) Handle(kek interface{}) error {
-	fmt.Println(hc.cm.GetAllCommands())
+	fmt.Println(hc.CM.GetAllCommands())
 	return nil
 }
